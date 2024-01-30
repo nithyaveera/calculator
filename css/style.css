@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    .cal{
+        border: 1px groove blueviolet;
+        border-radius: 20px;
+        box-shadow: 2px 1px 7px 1px blueviolet;
+        padding: 5% 3% 2% 3%;
+    }
+}
+#title{
+    font-weight:500;
+    font-size: x-large;
+}
+#description{
+    font-weight: 200;
+    font-size:small;
+}
+.input-box input{
+    text-align: right;
+    background-color:gainsboro;
+    border: 1px groove blueviolet;
+    box-shadow:1px 1px 7px 1px blueviolet;
+    height: 6vh;
+}
+input:focus-visible{
+    outline-color: blueviolet;
+    box-shadow:2px 1px 7px 2px blueviolet;
+}
+.btn-box{
+    padding-top:2em;
+}
+.btn{
+    font-weight:500;
+    margin-top: 1vh;
+}
+.btn:hover{
+    background-color:gainsboro;
+}
+

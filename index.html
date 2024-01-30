@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">CALCULATOR</h1>
+        <p id="description">for math operations more easily</p>
+        <div class="cal">
+        <div class="input-box">
+            <input type="text" class="user-input" id="result" readonly>
+        </div>
+        <div class="btn-box" id="button">
+            <div class="row">
+               <button class="btn col-3 " id="clear" onclick="input.value =' '">AC </button>
+               <button class= "btn col-3 " id="modulus" onclick="inputval('%')">%</button>
+               <button class="btn col-3 " id="divide" onclick="inputval('/')">/</button>
+               <button class="btn col-3" id="multiply" onclick="inputval('*')">*</button>
+            </div>
+            <div class="row">
+                <button class="btn col-3" id="1" onclick="inputval('1')">1</button>
+                <button class="btn col-3" id="2" onclick="inputval('2')">2</button>
+                <button class="btn col-3" id="3" onclick="inputval('3')">3</button>
+                <button class="btn col-3" id="subtract" onclick="inputval('-')">-</button>
+                
+            </div>
+            <div class="row">
+                <button class="btn col-3" id="4" onclick="inputval('4')" >4</button>
+                <button class="btn col-3" id="5" onclick="inputval('5')">5</button>
+                <button class="btn col-3" id="6" onclick="inputval('6')">6</button>
+                <button class="btn col-3" id="add" onclick="inputval('+')">+</button>
+            </div>
+            <div class="row">
+                <button class="btn col-3" id="7" onclick="inputval('7')">7</button>
+                <button class="btn col-3" id="8" onclick="inputval('8')">8</button>
+                <button class="btn col-3" id="9" onclick="inputval('9')">9</button>
+                 <button class="btn col-3" id="decimal" onclick="inputval('.')">.</button>
+            </div>
+            <div class="row">
+
+                 <button class="btn col-3" id="zero" onclick="inputval('0')">0</button>
+                 <button class="btn col-3" id="double-zero" onclick="inputval('00')">00</button>
+                 <button class=" btn col-6" id="equal" onclick="calculate()">=</button>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
